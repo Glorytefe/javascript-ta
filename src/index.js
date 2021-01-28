@@ -1,6 +1,10 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+  str =str.replace(/\W/g, '');
+  str = str.toUpperCase();
+  return str === str.split('').reverse().join('');
+  
 }
 
 function solution(arg) {
